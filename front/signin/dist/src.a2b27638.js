@@ -2618,7 +2618,8 @@ class TextField {
       container.innerHTML = this.#template(this.#buildData());
     }
   };
-}
+} //SPA single page application
+
 
 exports.default = TextField;
 },{"../utils":"src/page/utils/index.js","./text-field.template":"src/page/views/text-field.template.js"}],"src/page/views/index.js":[function(require,module,exports) {
@@ -2789,7 +2790,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "9373" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1119" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
